@@ -1,6 +1,6 @@
 <?php
     //Paso 1. Conexion BD
-    $cnx = @mysqli_connect('localhost','root','','bdferreteria')
+    $cnx = @mysqli_connect('localhost','id18817556_noelia','W(o!#hqiM>\r(!6r','id18817556_bdferreteria')
     or
         //echo "Error de conexion ".mysqli_connect_error();
         die(msj("[ERROR EN CONEXIÓN]", "Revisar los valores del parametro de conexión"));
