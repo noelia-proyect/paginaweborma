@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ORMP : Caylloma</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="../assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="../assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">    
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="../assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/animate.css"/>  
+    <!-- Bootstrap progressbar  -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-progressbar-3.3.4.css"/> 
+    <!-- Theme color -->
+    <link id="switcher" href="../assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="../style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Lato for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!-- BEGAIN PRELOADER -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  <!-- END PRELOADER -->
+
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start header -->
+  <header id="header">
+    <!-- header top search -->
+    <div class="header-top">
+      <div class="container">
+        <form action="">
+          <div id="search">
+          <input type="text" placeholder="Type your search keyword here and hit Enter..." name="s" id="m_search" style="display: inline-block;">
+          <button type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        </form>
+      </div>
+    </div>
+    <!-- header bottom -->
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-contact">
+              <ul>
+                <li>
+                  <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    +1(800) 699-7071
+                  </div>
+                </li>
+                <li>
+                  <div class="mail">
+                    <i class="fa fa-envelope"></i>
+                    jasalazarv@ejercito.mil.pe
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-login">
+              <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="#">Login / Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End header -->
+
+  <!-- Start login modal window -->
+  <div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal fade in">
+    <div class="modal-dialog">
+      <!-- Start login section -->
+      <div id="login-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-unlock-alt"></i>Login</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="User name" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+             <div class="loginbox">
+              <label><input type="checkbox"><span>Remember me</span></label>
+              <button class="btn signin-btn" type="button">SIGN IN</button>
+            </div>                    
+          </form>
+        </div>
+        <div class="modal-footer footer-box">
+          <a href="#">Forgot password ?</a>
+          <span>No account ? <a id="signup-btn" href="#">Sign Up.</a></span>            
+        </div>
+      </div>
+      <!-- Start signup section -->
+      <div id="signup-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-lock"></i>Sign Up</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input placeholder="Name" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Username" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <div class="signupbox">
+              <span>Already got account? <a id="login-btn" href="#">Sign In.</a></span>
+            </div>
+            <div class="loginbox">
+              <label><input type="checkbox"><span>Remember me</span><i class="fa"></i></label>
+              <button class="btn signin-btn" type="button">SIGN UP</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End login modal window -->
+
+  <!-- BEGIN MENU -->
+  <section id="titulo" >
+
+    OFICINA DE REGISTRO MILITAR 055-A AREQUIPA
+    </section>         
+          <!-- IMG BASED LOGO  -->
+          <!-- <a class="navbar-brand" href="index.php"><img src="assets/images/logo.png" alt="logo"></a> -->                    
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+            <li class="active"><a href="../index.php">Inicio</a></li>
+            <li><a href="service.html">Eventos</a></li>           
+            <li><a href="portfolio.html">Contacto</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">OR Provinciales<span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href=blog-ormp-camana.html>ORMP 56-A(CAMANA)</a></li>
+                <li><a href=blog-ormp-caylloma.html > ORMP 60-A(CAYLLOMA)</a></li>
+                <li><a href=blog-ormp-islay.html >ORMP 55-B(ISLAY)</a></li>
+                <li><a href=blog-ormp-caraveli.html >ORMP 57-A(CARAVELI)</a></li>
+                <li><a href=blog-ormp-la-union.html >ORMP 58-A(LA UNION)</a></li>
+                <li><a href=blog-ormp-condesuyos.html >ORMP 59-B(CONSDESUYOS)</a></li>
+                <li><a href=blog-ormp-castilla.html >ORMP 59-A(CASTILLA)</a></li>
+              </ul>
+            </li>
+          </ul>                     
+        </div><!--/.nav-collapse -->
+      </div>  
+    
+  <!-- END MENU --> 
+  
+  <!-- Start single page header -->
+  <section id="single-page-header">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-left">
+              <h2>SALAZAR VARGAS JAIME ANTONIO</h2>
+              <img src="../assets/images/or-camana/gorro.png" alt="img" width="40px" height="40px" ><span id="tecnico">| 
+                JEFE ORMP 60-A</span>
+              
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-right">
+              <ol class="breadcrumb">
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End single page header -->
+  
+  <!-- Start blog archive -->
+  <section id="blog-archive">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="blog-archive-area">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="blog-archive-left">
+                  <h2 id="charla"   > CHARLAS INFORMATIVAS CAYLLOMA 2022</h2>
+
+                  <!-- Start blog news single -->
+                  <article class="blog-news-single">
+                    <div class="blog-news-img">
+                      <a ><img src="../assets/images/or-camana/caylloma01.jpg" alt="image"></a>
+                    </div>
+                    <div class="blog-news-title">
+                      <h2><a >NOTA DE PRENSA Nº 008-2022/ORMP N° 060-A CAYLLOMA</a></h2>
+                      <p>|15 Agosto 2022</span></p>
+                    </div>
+                    <div class="blog-news-details">
+                      <p>La oficina de registro militar provincial nº 060-a caylloma, realizo or movil en el distrito de majes.
+                        Se instalo la or movil en el complejo deportivo la alameda, el horario de atencion fue de 08:00 a 14:30 hr se entrego 25 constancias de inscripcion militar a los jovenes que se inscribieron en forma virtual; asimismo se recepcionaron  15 expedientes para una posterior inscripcion virtual.
+                        <p>
+                    </div>
+                  </article>
+                  <!-- Start blog news single -->
+                  <article class="blog-news-single">
+                    <div class="blog-news-img">
+                      <a ><img src="../assets/images/or-camana/caylloma02.jpg" alt="image"></a>
+                    </div>
+                    <div class="blog-news-title">
+                      <h2><a >NOTA DE PRENSA Nº 001-2022/ORMP N° 060-A CAMANA</a></h2>
+                      <p>|31 Mayo 2022</p>
+                    </div>
+                    <div class="blog-news-details">
+                      <p>La oficina de registro militar provincial nº 060-a caylloma, participo en el simulacro multipeligro programando a nivel nacional, como integrante del comité de movilización.
+
+                        Asimismo, luego del simulacro multipeligro se participo en un pasacalle se sensibilizacion a la poblacion y la conmemoracion de los 52 años del terromoto de la ciudad de ancash huaraz.
+                        </p>
+                    </div>
+                  </article>
+                  <!-- Start blog news single -->
+                  <article class="blog-news-single">
+                    <div class="blog-news-img">
+                      <a ><img src="../assets/images/or-camana/caylloma03.png" alt="image"></a>
+                    </div>
+                    <div class="blog-news-title">
+                      <h2><a >NOTA DE PRENSA Nº 0004-2022/ORMP N° 060-A CAYLLOMA</a></h2>
+                      <p>|27 Octubre 2022</p>
+                    </div>
+                    <div class="blog-news-details">
+                      <p>La oficina de registro militar provincial nº 060-a caylloma, participo en la ceremonia por el 197 años del aniversario de la creacion politica de la provincia de caylloma.
+                        Se realizo la misa tedeum, el paseo de la bandera por las calles del distrito de chivay, luego el izamiento del pabellon nacional, desfile de honor y brindis en el salon multiusos de la municipalidad provincial de caylloma.
+                        </p>
+                    </div>
+                  </article>
+                  <article class="blog-news-single">
+                    <div class="blog-news-img"
+                      <a ><img src="../assets/images/or-camana/caylloma04.jpg" alt="image"></a>
+                    </div>
+                    <div class="blog-news-title">
+                      <h2><a >OR MOVIL DE LA ORMP  060- A CAYLLOMA EN EL DISTRITO DE 
+                        MAJES
+                        </a></h2>
+                      <p>|06 Abril 2022</p>
+                    </div>
+                    <div class="blog-news-details">
+                      <p>El tcoj ep jaime antonio salazar vargas jefe de la ormp 060-a caylloma visitando la ie almirante miguel grau del distrito de majes para realizar las coordinaciones con la directora, para ofrecer una charla a los jovenes de 5to secundaria con respecto a la ley n° 29248 con respecto a la inscripcion militar y los beneficios del servicio militar durante la realizacion de or movil el dia 06 de abril del 2022.</p>
+                    </div>
+                  </article>
+                  <article class="blog-news-single">
+                    <div class="blog-news-img">
+                      <a ><img src="../assets/images/or-camana/caylloma05.png" alt="image"></a>
+                    </div>
+                    <div class="blog-news-title">
+                      <h2><a >NOTA DE PRENSA Nº 005-2022/ORMP N° 060-A CAYLLOMA</a></h2>
+                      <p>|05,06 y 07 Julio 2022</p>
+                    </div>
+                    <div class="blog-news-details">
+                      <p>La oficina de registro militar provincial nº 060-a caylloma, realizo entrega de afiches para la difusion de la inscripcion militar a jovenes que vienen a inscribirse y tambien se colocaron en el mercado central de la ciudad, asimismo de difundio en el portal de la municipalidad distrital de majes la realziacion de or movil para el 13 de julio 2022.</p>
+                    </div>
+                  </article>
+                  
+                  
+                  
+                 
+                  
+                  
+                 
+                  <!-- Start blog pagination -->
+                  <div class="blog-pagination">
+                    <ul class="pagination-nav">
+                      <li><a href="blog-ormp-condesuyos.html">1</a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <aside class="blog-side-bar">
+                  <!-- Start sidebar widget -->
+                                    
+                    
+                    <!-- End blog search -->                                
+                    <div class="footer-right">
+                      <a href="../index.php"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                      <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                  <!-- Start sidebar widget -->
+                  <div class="sidebar-widget">
+                    <h4 class="widget-title">Direccion </h4>
+                    <p>Calle Leticia Mz Ñ LT 8 Sct A (Al costado de caja piura)</p>
+                    <ul class="widget-catg">                      
+                      <center><iframe <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d240.13498515672396!2d-71.6032714!3d-15.6364787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9169e7315bf88071%3A0xf6ceb63f3bb52979!2sCaja%20Piura!5e0!3m2!1ses!2spe!4v1669652300240!5m2!1ses!2spe" width="500" height="450" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+
+                    </ul>
+                  </div>
+                  <!-- Start sidebar widget -->
+                  <div class="sidebar-widget">
+                    <h4 class="widget-title">Información</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                  </div>
+                  <!-- Start sidebar widget -->
+                  
+                  <!-- Start sidebar widget -->
+                  <div class="sidebar-widget">
+                    <h4 class="widget-title">Links</h4>
+                    <ul class="widget-archive">
+                      <li><a href="#">November 2015<span>(35)</span></a></li>
+                      <li><a href="#">October 2015<span>(55)</span></a></li>
+                      <li><a href="#">September 2015<span>(65)</span></a></li>
+                      <li><a href="#">August 2015<span>(75)</span></a></li>
+                      <li><a href="#">July 2015<span>(105)</span></a></li>
+                    </ul>
+                  </div>
+                  <!-- Start sidebar widget -->
+                  
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+  <!-- End blog archive -->
+
+  <!-- Start subscribe us -->
+  
+  <!-- End subscribe us -->
+
+  <!-- Start footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="footer-left">
+            <p>Designed by <a href="http://www.markups.io/">MarkUps.io</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="footer-right">
+            <a href="../index.php"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer -->
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="../assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="../assets/js/slick.js"></script>    
+  <!-- mixit slider -->
+  <script type="text/javascript" src="../assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="../assets/js/jquery.fancybox.pack.js"></script>
+ <!-- counter -->
+  <script src="../assets/js/waypoints.js"></script>
+  <script src="../assets/js/jquery.counterup.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="../assets/js/wow.js"></script> 
+  <!-- progress bar   -->
+  <script type="text/javascript" src="../assets/js/bootstrap-progressbar.js"></script>  
+    
+   
+  <!-- Custom js -->
+  <script type="text/javascript" src="../assets/js/custom.js"></script>
+    
+  </body>
+</html>
